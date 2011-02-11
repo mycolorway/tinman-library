@@ -1,0 +1,352 @@
+html, body, ul, ol, li, h3, h4, h5, p{
+	margin:0;
+	padding:0;
+}
+
+a{
+	text-decoration:none;
+	display:block;
+}
+a:focus{
+	outline:none;
+}
+.hide{
+	display:none;
+}
+
+.show{
+	display:block;
+}
+/*字体：微软雅黑 Myriad Pro */
+body{
+	background:#000;
+	font-family:Myriad Pro,Microsoft YaHei,STHeiti,sans-serif;
+}
+
+#wrapper{
+	width:1024px;
+	margin:0 auto;
+}
+
+#header{
+	position:relative;
+	height:100px;
+	background:url(../images/header-bg.jpg);
+}
+
+	.logo{
+		padding:20px 0 15px 370px;
+		background:url(../images/home.png) 280px 19px no-repeat;
+	}
+		.logo img{
+			padding-top:15px;
+		}
+
+	.language{
+		position:absolute;
+		right:65px;
+		top:35px;
+	}
+	
+	.language a{
+		display:block;
+		float:left;
+		color:rgba(0,0,0,0);
+		width:54px;
+		height:37px;
+	}
+	.language a:hover, .language a.over{
+		border-radius:6px;
+		box-shadow:0 0 30px #FFF;
+	}
+
+	.language a#chinese{
+		margin-right:5px;
+		/*background:url(../images/language.png) no-repeat;*/
+	}
+
+	.language a#english{
+		/*background:url(../images/language.png) 0 -45px no-repeat;*/
+	}
+#content{
+	position:relative;
+}
+.grid-1{
+	height:297px;
+	background:url(../images/grid-1.jpg);
+}
+	
+	.grid-1 img{
+		padding:20px 0 0 35px;
+	}
+
+.grid-2{
+	height:140px;
+	padding-top:20px;
+	background:url(../images/grid-2.jpg) no-repeat;
+}
+	.grid-2 .sort{
+		float:left;
+		width:180px;
+		height:125px;
+	}
+
+	.grid-2 .coming-soon{
+		background:url("../images/coming-soon.png") 113px 60px no-repeat;
+	}
+	
+		.grid-2 .sort img{
+			margin-left:10px;
+		}
+
+	.grid-2 .book-list{
+		float:left;
+		width:844px;	
+	}
+
+	.grid-2 .chickens{
+		background:url(../images/icon-chickens.png) 0 20px no-repeat;
+	}
+
+	.grid-2 .little-bear{
+		background:url(../images/icon-little-bear.png) 0 20px no-repeat;
+	}
+
+	.grid-2 .little-science{
+		background:url(../images/icon-little-science.png) 0 20px no-repeat;
+	}
+
+	.grid-2 .xiyou{
+		background:url(../images/icon-xiyou.png) 0 20px no-repeat;
+	}
+
+	.grid-2 .china-story{
+		background:url(../images/icon-china-story.png) 0 20px no-repeat;
+	}
+	
+		.grid-2 .book-list ul{
+			margin-left:40px;
+		}
+		
+		.book-list li{
+			float:left;
+			width:122px;
+			height:116px;
+			list-style:none;
+			background:url(../images/book-shadow.png) right bottom no-repeat;
+		}
+		
+			.book-list li h3,
+			.book-list li h3 a{
+				color:#fff;
+				text-align:center;
+				text-shadow:2px 1px 5px #000;
+				line-height:1em;
+				height:110px;
+				font-weight:normal;
+			}
+
+			.book-list li h3 a:hover,
+			.book-list li h3 a.over{
+				text-shadow:1px 1px 30px #fff;
+			}
+
+			.book-list li .english{
+				font-size:14px;
+			}
+
+			.book-list li .chinese{
+				font-size:16px;
+			}
+
+			.grid-2 .chickens h3{
+				background:url(../images/book-chickens.png) no-repeat;
+			}
+				
+				.grid-2 .chickens .book-1{ background-position:20px 25px; }
+				.grid-2 .chickens .book-2{ background-position:20px -85px; }
+				.grid-2 .chickens .book-3{ background-position:20px -195px; }
+				.grid-2 .chickens .book-4{ background-position:20px -305px; }
+				.grid-2 .chickens .book-5{ background-position:20px -415px; }
+				.grid-2 .chickens .book-6{ background-position:20px -535px; }
+
+			.grid-2 .little-bear h3{
+				background:url(../images/book-little-bear.png) no-repeat;
+			}
+				
+				.grid-2 .little-bear .book-1{ background-position:20px 25px; }
+				.grid-2 .little-bear .book-2{ background-position:20px -85px; }
+				.grid-2 .little-bear .book-3{ background-position:20px -195px; }
+				.grid-2 .little-bear .book-4{ background-position:20px -305px; }
+				.grid-2 .little-bear .book-5{ background-position:20px -415px; }
+				.grid-2 .little-bear .book-6{ background-position:20px -525px; }
+
+			.grid-2 .little-science h3{
+				background:url(../images/book-little-science.png) no-repeat;
+			}
+				
+				.grid-2 .little-science .book-1{ background-position:20px 25px; }
+				.grid-2 .little-science .book-2{ background-position:20px -85px; }
+				.grid-2 .little-science .book-3{ background-position:20px -195px; }
+				.grid-2 .little-science .book-4{ background-position:20px -305px; }
+				.grid-2 .little-science .book-5{ background-position:20px -415px; }
+				.grid-2 .little-science .book-6{ background-position:20px -525px; }
+
+			.grid-2 .china-story h3{
+				background:url(../images/book-china-story.png) no-repeat;
+			}
+				
+				.grid-2 .china-story .book-1{ background-position:20px 25px; }
+				.grid-2 .china-story .book-2{ background-position:20px -85px; }
+				.grid-2 .china-story .book-3{ background-position:20px -195px; }
+				.grid-2 .china-story .book-4{ background-position:20px -305px; }
+
+			.grid-2 .xiyou h3,
+			.grid-2 .xiyou-other h3{
+				background:url(../images/book-xiyou.png) no-repeat;
+			}
+				
+				.grid-2 .xiyou .book-1{ background-position:20px 25px; }
+				.grid-2 .xiyou .book-2{ background-position:20px -85px; }
+				.grid-2 .xiyou .book-3{ background-position:20px -195px; }
+				.grid-2 .xiyou .book-4{ background-position:20px -305px; }
+				.grid-2 .xiyou .book-5{ background-position:20px -415px; }
+				.grid-2 .xiyou .book-6{ background-position:20px -525px; }
+				.grid-2 .xiyou-other .book-1,
+				.grid-2 .xiyou .book-7{ background-position:20px -635px; }
+				.grid-2 .xiyou-other .book-2,
+				.grid-2 .xiyou .book-8{ background-position:20px -745px; }
+
+.star{
+	display:block;position:relative;top:-45px;left:85px;height:43px;width:43px;
+	color:#fff;font-size:14px;font-weight:500;line-height:3em;
+	text-align:center;text-shadow:2px 1px 2px #000;
+}
+
+.red-star{
+	background:url(../images/star-bg.png) no-repeat;
+}
+
+.blue-star{
+	background:url(../images/star-bg.png) bottom no-repeat;
+}
+
+	.star em{
+		font-size:16px;
+		font-style:normal;
+		margin-right:1px;
+	}
+
+/*----弹出窗口----*/
+.detail{
+	display:none;position:absolute;left:42px;top:0;z-index:10;
+	width:940px;height:652px;
+}
+	.detail .detail-hd{
+		height:40px;margin-bottom:-1px;
+		background:url(../images/detail-hd-bg.png) no-repeat;
+	}
+	.detail .detail-ft{
+		height:65px;margin-top:-1px;
+		background:url(../images/detail-ft-bg.png) no-repeat;
+	}
+	.detail .detail-bd{
+		overflow:hidden;height:562px;
+		background:url(../images/detail-bd-bg.png) repeat-y;
+	}
+		.detail-bd .left-detail{
+			float:left;width:330px;padding:0 60px 0 70px;
+		}
+			.left-detail .close-btn{
+				position:absolute;left:35px;top:25px;height:37px;
+				background:url(../images/close-btn.png) no-repeat;
+				color:rgba(0,0,0,0);
+			}
+		.detail-bd h2{
+			margin:0.7em 0 0.5em;
+			color:#ed6d34;font-weight:normal;font-size:30px;line-height:1.2em;
+		}
+		.detail-bd .book-icon{
+			height:111px;
+			background:url(../images/detail-bd-book-bg.png) 10px 0 no-repeat;
+		}
+			.detail-bd .book-icon h3{
+				position:relative;top:-15px;left:100px;width:122px;
+				color:#ac4932;font-size:12px;text-shadow:none;line-height:20em;
+			}
+		.detail-bd .book-all{
+			margin:-1.5em 0 0.5em;float:left;
+		}
+			.detail-bd .book-all li{
+				margin-left:-0.9em;
+			}
+			.detail-bd .book-all h3{
+				color:#ac4932;font-size:12px;text-shadow:none;line-height:20em;
+			}
+		.china-story .book-all{
+			margin:0 2em 2em;
+		}
+			.china-story .book-all li{
+				margin:0 0.3em;
+			}
+		.detail-bd h4{
+			padding:1em 0 0.5em;clear:left;
+			color:#ed6d34;font-size:14px;
+		}
+			.right-detail h4{
+				padding: 1em 0;
+			}
+		.detail-bd .p1{
+			color:#999;text-indent:2em;font-size:12px;line-height:1.5em;
+		}
+		.detail-bd .detail-pic{
+			padding-left:2.4em;
+		}
+			.right-detail .detail-pic{
+				padding:2.5em 2.4em 0;
+			}
+			.china-story .detail-pic{
+				padding:1em 2.4em 0;
+			}
+		.detail-bd .right-detail{
+			float:left;width:350px;padding:0 60px;
+		}	
+			.view-in-itunes{
+				margin:20px auto 0;width:139px;height:39px;
+				color:rgba(0,0,0,0);
+				background:url(../images/itunes-btn.png) no-repeat;
+			}
+.xiyou .detail{
+	top:-450px;	
+}
+.grid-3{
+	height:159px;
+	background:url(../images/grid-3.jpg);
+}
+
+	.grid-3 img{
+		padding:60px 0 0 105px;
+	}
+.grid-4{
+	position:relative;
+}
+	.grid-4 .coming-soon{
+		position:relative;z-index:2;
+		background:url("../images/coming-soon.png") 113px 60px no-repeat;
+	}
+	.grid-4-left{
+		position:absolute;top:2px;width:180px;height:299px;
+		background:url(../images/grid-4-left.jpg) no-repeat;
+	}
+		.grid-4-left img{
+			margin:100px 0 0 15px;
+		}
+	.grid-4-right{
+		position:absolute;top:2px;right:0;width:25px;height:299px;
+		background:url(../images/grid-4-right.jpg) no-repeat;
+	}
+	
+#footer{
+	height:49px;
+	background:url(../images/footer-bg.png);
+}
