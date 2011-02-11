@@ -68,7 +68,6 @@ function changeLang(){
 			return function(e){
 				el = link[i].parentNode.parentNode.lastChild;
 				while( el.nodeType !== 1 ){
-					console.log(el.nodeType);
 					el = el.previousSibling;
 				}
 				var scrollPos = scrollTop( e );
