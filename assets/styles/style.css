@@ -1,0 +1,303 @@
+
+/* ----- css reset ----- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ----- global style ----- */
+
+body {
+    font-size: 12px; 
+    font-family: STHeiti, "微软雅黑", Verdana, Helvetica, sans-serif;
+    color: #333333;
+    background: #e6f6f7 url(../images/bg.png) repeat-x 0 0;
+}
+
+a:link {
+    color: #3f5f94;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #3f5f94;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a.disabled {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+a.disabled:hover {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+em, .em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.hidden {
+    position: absolute !important;
+    left: -99999999px !important;
+}
+
+.clear {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    max-height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+/* required comment for clearfix to work in Opera \*/
+* html .clearfix {
+    height:1%;
+}
+.clearfix {
+    display:block;
+}
+/* end clearfix */
+
+
+/* ----- layout ----- */
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background: url(../images/wrapper-bg.png) no-repeat 20px 80px;
+}
+
+.header {
+    height: 145px;
+    background: url(../images/header.png) no-repeat 0 0;
+    position: relative;
+}
+
+.footer {
+    padding: 10px 0 20px;
+    text-align: center;
+    color: #b3e3e5;
+}
+
+
+/* ----- header ----- */
+
+.header h1 {
+    width: 365px;
+    height: 80px;
+    position: absolute;
+    top: 30px;
+    left: 165px;
+}
+
+.header h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+
+.header .nav {
+    position: absolute;
+    top: 118px;
+    left: 88px;
+}
+
+.header .nav li {
+    float: left;
+    margin: 0 2px 0 0;
+}
+
+.header .nav li a {
+    display: block;
+    float: left;
+    width: 75px;
+    height: 25px;
+    text-indent: -9999px;
+}
+
+
+/* ----- serial box ----- */
+
+.serial-box {
+    width: 811px;
+    height: 305px;
+    margin: 0 auto;
+    background: url(../images/serial-box.png) no-repeat 0 0;
+    position: relative;
+}
+
+.serial-box .serial-title {
+    width: 226px;
+    height: 32px;
+    text-indent: -9999px;
+    position: absolute;
+    top: 35px;
+    left: 25px;
+}
+
+.serial-box-chicks .serial-title {
+    background: url(../images/serial-title-chicks.png) no-repeat 0 0;
+}
+
+.serial-box-cnstory .serial-title {
+    background: url(../images/serial-title-cnstory.png) no-repeat 0 0;
+}
+
+.serial-box-baoxiaoxiyou .serial-title {
+    background: url(../images/serial-title-baoxiaoxiyou.png) no-repeat 0 0;
+}
+
+.serial-box .serial-desc {
+    width: 240px;
+    color: #aab8bc;
+    font-size: 14px;
+    line-height: 1.6;
+    text-indent: 20px;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+}
+
+.serial-box .app-list {
+    position: absolute;
+    top: 35px;
+    left: 300px;
+}
+
+.serial-box .app-list li {
+    width: 120px;
+    float: left;
+    margin: 0 0 15px 0;
+}
+
+.serial-box .app-list li .app-icon {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.serial-box .app-list li .app-icon a {
+    display: block;
+    width: 88px;
+    height: 88px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.serial-box .app-list li .app-icon .app-label {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.serial-box .app-list li .app-icon .app-label-1 {
+    background: url(../images/label-1.png) no-repeat 0 0;
+}
+
+.serial-box .app-list li .app-icon .app-label-2 {
+    background: url(../images/label-2.png) no-repeat 0 0;
+}
+
+.serial-box .app-list li .app-icon .app-label-free {
+    background: url(../images/label-free.png) no-repeat 0 0;
+}
+
+.serial-box .app-list li .app-icon .app-label-soon {
+    width: 76px;
+    height: 34px;
+    top: 25px;
+    left: 6px;
+    background: url(../images/label-soon.png) no-repeat 0 0;
+}
+
+.serial-box .app-list li .app-name {
+    padding: 5px 0;
+    font-size: 14px;
+    line-height: 14px;
+    color: #697c7d;
+    text-align: center;
+}
+
