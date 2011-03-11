@@ -176,6 +176,7 @@ em, .em {
 }
 
 .header .nav {
+    display: none;
     position: absolute;
     top: 118px;
     left: 88px;
